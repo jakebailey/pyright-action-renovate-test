@@ -3,6 +3,10 @@ name: 'Pyright'
 on:
   workflow_dispatch
 
+env:
+  # renovate: datasource=npm depName=pyright
+  PYRIGHT_VERSION: '1.1.311'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,4 +17,4 @@ jobs:
 
       - uses: jakebailey/pyright-action@main
         with:
-          version: '1.1.311' # renovate: datasource=npm depName=pyright
+          version: ${{ env.PYRIGHT_VERSION }}
