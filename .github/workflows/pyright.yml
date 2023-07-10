@@ -1,0 +1,16 @@
+name: 'Pyright'
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Pyright
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: jakebailey/pyright-action@main
+        with:
+          version: '1.1.311' # renovate: datasource=npm depName=pyright
