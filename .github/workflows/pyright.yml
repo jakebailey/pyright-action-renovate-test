@@ -13,8 +13,8 @@ jobs:
     name: Pyright
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
-      - uses: jakebailey/pyright-action@v1
+      - uses: jakebailey/pyright-action@6baf8b2bcc1727b5a89249955f936d4a6f9f995b # v1
         with:
           version: ${{ env.PYRIGHT_VERSION }}
