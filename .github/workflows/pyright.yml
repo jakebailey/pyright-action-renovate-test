@@ -15,6 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: jakebailey/pyright-action@v1
+      - uses: jakebailey/pyright-action@03ab3c98073356eb56161009632b39fc2666321b # v2
         with:
           version: ${{ env.PYRIGHT_VERSION }}
