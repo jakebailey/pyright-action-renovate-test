@@ -13,7 +13,7 @@ jobs:
     name: Pyright
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
       - uses: jakebailey/pyright-action@v1
         with:
